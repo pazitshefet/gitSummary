@@ -45,40 +45,11 @@ pip install -r requirements.txt
 
 ### 4. Start the server
 
-uvicorn main:app --reload
+uvicorn main:app
 
-- `main` is the Python file containing your FastAPI app instance named `app`.  
-- The `--reload` flag restarts the server automatically on code changes (for development).
+`main` is the Python file containing FastAPI app instance named `app`.  
 
-### 5. Open the app in your browser
+### 5. Open the app in browser
 
 Visit: http://127.0.0.1:8000
 
----
-
-## Notes
-
-- To stop the server, press `Ctrl+C` in the terminal.  
-- To deactivate the virtual environment, run:
-
-deactivate
-
-- If you add new dependencies, update the requirements file by running:
-
-pip freeze > requirements.txt
-
----
-
-## Troubleshooting
-
-- If `uvicorn` is not installed, install it manually:
-
-pip install uvicorn
-
-- If you get permission errors activating the venv on Windows PowerShell, run PowerShell as Administrator and execute:
-
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-
----
-
-*Created by Pazit Shefet*
