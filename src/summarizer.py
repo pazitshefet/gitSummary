@@ -2,7 +2,6 @@ import os
 import shutil
 import tempfile
 import subprocess
-#from git import Repo
 from openai import OpenAI
 from config import settings
 from repo_reader import collect_files, read_files
