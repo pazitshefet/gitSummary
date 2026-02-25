@@ -1,55 +1,45 @@
 # gitSummary
 
-This guide explains how to set up the project dependencies and start the gitSummary server locally.
+This guide explains how to set up the project dependencies, install and start the gitSummary server locally.
 
 ---
 
 ## Prerequisites
 
-- Python 3.10 or higher installed  
-- Git installed (optional, for cloning the repo)  
-- Recommended: use a virtual environment to manage dependencies  
+- Python 3.10 or higher installed
+- Git installed
+- A virtual environment (recommended)
 
 ---
 
 ## Setup Instructions
 
-### 1. Clone the repository (if you haven’t already)
-
-git clone https://github.com/pazitshefet/gitSummary.git
+### 1. Clone the repository
+Get the source code onto your machine:
+git clone https://github.com
 cd gitSummary
 
 ### 2. Create and activate a virtual environment
+Set up an isolated environment to manage all required packages:
 
-**Windows (cmd):**
-
+**Windows (CMD/PowerShell):**
 python -m venv venv
-venv\Scripts\activate.bat
-
-**Windows (PowerShell):**
-
-python -m venv venv
-.\venv\Scripts\Activate.ps1
+.\venv\Scripts\activate
 
 **macOS / Linux:**
-
 python3 -m venv venv
 source venv/bin/activate
 
 ### 3. Install dependencies
-
+Update pip and install the required libraries:
 pip install --upgrade pip
 pip install -r requirements.txt
 
-> Make sure the `requirements.txt` file exists in the project root and lists all necessary packages.
-
 ### 4. Start the server
-
+Run the FastAPI application with Uvicorn:
 uvicorn main:app
 
-`main` is the Python file containing FastAPI app instance named `app`.  
-
 ### 5. Open the app in browser
-
-Visit: http://127.0.0.1:8000
+Visit the following link once the server is up:
+http://127.0.0.1:8000
 
