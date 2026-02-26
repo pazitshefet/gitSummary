@@ -83,17 +83,13 @@ open another terminal and send a request
 **Windows**
 
 curl -X POST http://127.0.0.1:8000/summarize ^
-
   -H "Content-Type: application/json" ^
-
   -d "{\"github_url\":\"https://github.com/psf/requests\"}"
 
 **Linux**
 
 curl -X POST http://127.0.0.1:8000/summarize \
-
   -H "Content-Type: application/json" \
-
   -d "{\"github_url\":\"https://github.com/psf/requests\"}"
 
 
